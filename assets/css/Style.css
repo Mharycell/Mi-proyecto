@@ -1,79 +1,81 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Great+Vibes&family=Kaushan+Script&family=Montserrat:wght@300&family=Square+Peg&display=swap');
+
+*,*::before, *::after{
     box-sizing: border-box;
-    margin: 0px;
-    padding: 0;
+}
+html{
+  font-size: 20px;
+  font-family: 'Great Vibes', cursive;
+  font-weight: bold;
+}
+body{
+  margin: 0;
+  height: auto;
+  background-color: rgb(235, 190, 190);
 }
 
-header {
+.cont-list{
+    margin-top: 0;
     position: fixed;
     top: 0;
-}
-
-body {
-    font-size: 1.6rem;
-}
-
-.container {
     width: 100%;
-    height: 100%;
-    margin-top: 10rem;
+    height: 50px;
+    background-color: rgb(243, 174, 166) ;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    z-index: 10;
 }
 
-.box {
-    margin: 10px;
-    height: 20rem;
-    width: 20rem;
-    flex-basis: 100rem;
+.element{
+    font-size: 20px;
+    padding: 0 20px;
+    list-style: none;
 }
-
-.box1 {
-    display: flex;
-    height: 4rem;
-    width: 100%;
-    background-color: rgb(243, 174, 166);
-}
-.box img {
-    width: 100%;
-    height: 91%;
-}
-.box video {
-    width: 100%;
-    height: 91%;
-}
-.element {
-    margin-inline-start: 10rem;
-    height: 30px;
-    background-color: rgb(169, 211, 212);
-}
-
 .element:hover{
-     background-color: rgb(188, 197, 197);
+    background-color: green; 
+}
+.main{
+    position: relative;
+    top: 70px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    z-index: 1;
 }
 
-.box2 {
-    background-color: salmon;
+.box{
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
 }
 
-.box3 {
-    background-color: salmon;
+.image{
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 2px 2px  black;
 }
 
-.box4 {
-    background-color: salmon;
+.text{
+    width: 300px;
+    height: auto;
 }
 
-h1 {
-    font-size: medium;
-    text-align: justify;
-}
-
-.footer {
+footer {
     background-color:rgb(243, 174, 166) ;
     width: 100%;
-    height: 4px;
-    position: fixed;
-    text-align: center;
+    height: 4rem;
+    display: flex;
+    color: black;
+    justify-content:center;
+    align-items: center;
+    font-size: 20px;
+    flex-direction: column;
+    gap: 5px;
+    position:relative;
+    top: 150px; 
 }
